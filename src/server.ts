@@ -2,8 +2,6 @@ import express from "express";
 import "./database";
 import { routes } from "./routes";
 
-const app = express();
-
 /*
 Rotas:
     Métodos HTTP:
@@ -13,6 +11,8 @@ Rotas:
         *DELETE: deletar
         *PATCH: alterar uma informação específica 
 */
+
+const app = express();
 
 app.use(express.json());
 
